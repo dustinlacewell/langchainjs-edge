@@ -4,7 +4,7 @@ import {
   ChatCompletionRequestMessage,
   CreateChatCompletionRequest,
   ConfigurationParameters,
-} from "openai";
+} from "openai-edge";
 import type { IncomingMessage } from "http";
 import { createParser } from "eventsource-parser";
 import fetchAdapter from "../util/axios-fetch-adapter.js";

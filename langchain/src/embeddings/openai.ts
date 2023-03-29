@@ -3,7 +3,7 @@ import {
   OpenAIApi,
   CreateEmbeddingRequest,
   ConfigurationParameters,
-} from "openai";
+} from "openai-edge";
 import fetchAdapter from "../util/axios-fetch-adapter.js";
 import { chunkArray } from "../util/index.js";
 import { Embeddings, EmbeddingsParams } from "./base.js";

@@ -8,7 +8,7 @@ import {
   CreateCompletionResponse,
   CreateCompletionResponseChoicesInner,
   OpenAIApi,
-} from "openai";
+} from "openai-edge";
 import fetchAdapter from "../util/axios-fetch-adapter.js";
 import { chunkArray } from "../util/index.js";
 import { BaseLLM, BaseLLMParams } from "./base.js";
