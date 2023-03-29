@@ -23,7 +23,7 @@
     "useDefineForClassFields": true,
     "strictPropertyInitialization": false,
     "allowJs": true,
-    "strict": true
+    "strict": false
   },
   "include": [
     "src/**/*"

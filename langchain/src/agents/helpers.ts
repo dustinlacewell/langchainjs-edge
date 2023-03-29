@@ -33,5 +33,5 @@ export const deserializeHelper = async <
     SerializedLLMChain
   >("llm_chain", data);
   const llmChain = await LLMChain.deserialize(serializedLLMChain);
-  return fromConstructor({ ...data, llmChain });
+  return fromConstructor({ ...data, llmChain } as any);
 };

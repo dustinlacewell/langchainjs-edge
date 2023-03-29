@@ -4,7 +4,6 @@ export declare class ChainTool extends Tool {
     name: string;
     description: string;
     chain: BaseChain;
-    returnDirect: boolean;
     constructor(fields: {
         name: string;
         description: string;

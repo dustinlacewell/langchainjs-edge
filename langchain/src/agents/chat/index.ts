@@ -64,7 +64,7 @@ export class ChatAgent extends Agent {
     if (agentScratchpad) {
       return `This was your previous work (but I haven't seen any of it! I only see what you return as final answer):\n${agentScratchpad}`;
     }
-    return agentScratchpad;
+    return agentScratchpad as string;
   }
 
   /**

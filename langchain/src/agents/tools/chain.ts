@@ -8,8 +8,6 @@ export class ChainTool extends Tool {
 
   chain: BaseChain;
 
-  returnDirect: boolean;
-
   constructor(fields: {
     name: string;
     description: string;

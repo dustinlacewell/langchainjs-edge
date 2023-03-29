@@ -83,30 +83,30 @@ export declare class ChatAnthropic extends BaseChatModel implements AnthropicInp
      */
     invocationParams(): Omit<SamplingParameters, "prompt"> & Kwargs;
     _identifyingParams(): {
-        temperature?: number | undefined;
+        temperature?: number;
         model: string;
-        top_p?: number | undefined;
-        top_k?: number | undefined;
+        top_p?: number;
+        top_k?: number;
         max_tokens_to_sample: number;
         stop_sequences: string[];
         tags?: {
             [key: string]: string;
-        } | undefined;
+        };
         model_name: string;
     };
     /**
      * Get the identifying parameters for the model
      */
     identifyingParams(): {
-        temperature?: number | undefined;
+        temperature?: number;
         model: string;
-        top_p?: number | undefined;
-        top_k?: number | undefined;
+        top_p?: number;
+        top_k?: number;
         max_tokens_to_sample: number;
         stop_sequences: string[];
         tags?: {
             [key: string]: string;
-        } | undefined;
+        };
         model_name: string;
     };
     private formatMessagesAsPrompt;
@@ -129,6 +129,6 @@ export declare class ChatAnthropic extends BaseChatModel implements AnthropicInp
     /** @ignore */
     completionWithRetry(request: SamplingParameters & Kwargs): Promise<CompletionResponse>;
     _llmType(): string;
-    _combineLLMOutput(): never[];
+    _combineLLMOutput(): any[];
 }
 export {};

@@ -35,7 +35,7 @@ import { TextLoader } from "./text.js";
  * // <i>Corruption discovered at the core of the Banking Clan!</i>
  */
 export declare class CSVLoader extends TextLoader {
-    column?: string | undefined;
-    constructor(filePathOrBlob: string | Blob, column?: string | undefined);
+    column?: string;
+    constructor(filePathOrBlob: string | Blob, column?: string);
     protected parse(raw: string): Promise<string[]>;
 }

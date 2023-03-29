@@ -4,7 +4,7 @@ import { BufferLoader } from "./buffer.js";
 export declare class PDFLoader extends BufferLoader {
     private splitPages;
     constructor(filePathOrBlob: string | Blob, { splitPages }?: {
-        splitPages?: boolean | undefined;
+        splitPages?: boolean;
     });
     parse(raw: Buffer, metadata: Document["metadata"]): Promise<Document[]>;
 }

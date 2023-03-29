@@ -20,12 +20,6 @@ export class ChainTool extends Tool {
             writable: true,
             value: void 0
         });
-        Object.defineProperty(this, "returnDirect", {
-            enumerable: true,
-            configurable: true,
-            writable: true,
-            value: void 0
-        });
         this.name = fields.name;
         this.description = fields.description;
         this.chain = fields.chain;
